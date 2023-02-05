@@ -1,1 +1,1 @@
-# -flutter-clean-architecture-template
+# flutter-clean-architecture-template
