@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'core/core_features/app_router/provider/go_router_provider.dart';
+import '../core/core_features/app_router/provider/go_router_provider.dart';
+
 
 final loggedInProvider = StateProvider<bool>((ref) => false);
 

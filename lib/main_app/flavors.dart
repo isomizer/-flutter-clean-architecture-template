@@ -1,4 +1,5 @@
-import 'features/app_config/app_config.dart';
+import '../features/app_config/app_config.dart';
+
 
 enum Flavor{
   dev,

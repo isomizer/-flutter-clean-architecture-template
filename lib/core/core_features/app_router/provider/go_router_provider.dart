@@ -3,8 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../../../app_widget.dart';
-
+import '../../../../main_app/app_widget.dart';
 import '../routes/global_navigator_keys.dart';
 import '../routes/go_routes.dart';
 import '../routes/routes.dart';

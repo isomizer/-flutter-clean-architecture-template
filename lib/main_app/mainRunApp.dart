@@ -5,9 +5,9 @@ import 'package:stack_trace/stack_trace.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
+import '../core/core_features/views/provider_observers.dart';
+import '../core/jailbroken.dart';
 import 'app_widget.dart';
-import 'core/core_features/views/provider_observers.dart';
-import 'core/jailbroken.dart';
 
 void mainRunApp() async {
   if (kDebugMode) {
