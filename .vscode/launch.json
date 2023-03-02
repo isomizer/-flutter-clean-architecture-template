@@ -8,7 +8,7 @@
             "name": "DEV",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/lib/main_dev.dart",
+            "program": "${workspaceFolder}/lib/main_app/main_dev.dart",
             "args": [
                 "--flavor",
                 "dev"
@@ -18,7 +18,7 @@
             "name": "STG",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/lib/main_stg.dart",
+            "program": "${workspaceFolder}/lib/main_app/main_stg.dart",
             "args": [
                 "--flavor",
                 "dev"
@@ -28,7 +28,7 @@
             "name": "PRD",
             "request": "launch",
             "type": "dart",
-            "program": "${workspaceFolder}/lib/main_prd.dart",
+            "program": "${workspaceFolder}/lib/main_app/main_prd.dart",
             "args": [
                 "--flavor",
                 "dev"
