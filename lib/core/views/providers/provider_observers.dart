@@ -1,7 +1,5 @@
 import 'dart:developer';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 
 class LogProviderObserver extends ProviderObserver {
   @override
