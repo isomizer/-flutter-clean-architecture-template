@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/core_features/app_router/providers/go_router_provider.dart';
 
-
 final loggedInProvider = StateProvider<bool>((ref) => false);
 
 class MyApp extends ConsumerWidget {

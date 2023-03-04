@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../main_app/app_widget.dart';
 
-
 class LoginPage extends ConsumerStatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -11,26 +10,10 @@ class LoginPage extends ConsumerStatefulWidget {
   ConsumerState<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends ConsumerState<LoginPage>
-    with TickerProviderStateMixin {
-  late final _controller = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 1),
-  )..addStatusListener((status) {
-      if (status != AnimationStatus.completed) return;
-      // Update the logged in state after the animation for demo purposes.
-      ref.read(loggedInProvider.notifier).state = true;
-    });
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
+class _LoginPageState extends ConsumerState<LoginPage> {
   @override
   Widget build(BuildContext context) {
-     final formKey = GlobalKey<FormState>();
+    final formKey = GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Login'),
@@ -74,7 +57,9 @@ class _LoginPageState extends ConsumerState<LoginPage>
               onPressed: () {
                 if (formKey.currentState!.validate()) {
                   // Process login
-                  ref.read(loggedInProvider.notifier).state = true;
+                  if (mounted) {
+                    ref.read(loggedInProvider.notifier).state = true;
+                  }
                 }
               },
               child: const Text('Login'),
