@@ -11,6 +11,7 @@ import '../routes/routes.dart';
 final goRouterProvider = Provider<GoRouter>((ref) {
   final loggedIn = ref.watch(loggedInProvider);
   return GoRouter(
+    debugLogDiagnostics: true,
     initialLocation: Routes.homePage,
     navigatorKey: GlobalNavigatorKeys.rootNavigator,
     routes: GoRoutes.routes(GlobalNavigatorKeys.shellNavigator),

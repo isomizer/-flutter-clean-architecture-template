@@ -1,12 +1,11 @@
 name: main_app
 description: A new Flutter project.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
-
+  sdk: ">=2.18.6 <3.0.0"
 
 dependencies:
   flutter:
@@ -27,29 +26,23 @@ dependencies:
   equatable: ^2.0.5
 
   #Apis
-  dio: ^4.0.4
+  dio: ^5.0.1
+  chopper: ^6.1.1
 
   #LocalStorage
-  shared_preferences: ^2.0.17
-  sqflite: ^2.0.1
-  flutter_cache_manager: ^3.3.0
-  image_picker: ^0.8.4+4
+  flutter_secure_storage: ^8.0.0
 
   #Images
   cached_network_image: ^3.2.0
   lottie: ^1.2.1
 
-
   #Utils
   mocktail: ^0.3.0
   fast_immutable_collections: ^8.1.0
-  flutter_fadein: ^2.0.0
-  uuid: ^3.0.5
   url_launcher: ^6.0.20
 
   #Navigation
   go_router: ^6.0.6
-
 
   melos: ^2.9.0
   flutter_flavor: ^3.1.1
@@ -57,11 +50,15 @@ dependencies:
   #Connectivity
   connectivity_plus: ^3.0.2
 
+  #Analytics
   datadog_flutter_plugin: ^1.2.1
   stack_trace: ^1.10.0
-  flutter_screenutil: ^5.6.1
   flutter_jailbreak_detection: ^1.10.0
-  
+
+  #UI
+  flutter_screenutil: ^5.6.1
+  very_good_cli: ^0.12.2
+  very_good_infinite_list: ^0.7.0
 
 dev_dependencies:
   flutter_test:
