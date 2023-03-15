@@ -5,9 +5,12 @@ import 'package:stack_trace/stack_trace.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
+import '../core/infrastructure/app_network_proxy.dart';
 import '../core/infrastructure/jailbroken.dart';
+
 import 'app_widget.dart';
 import '../core/views/providers/provider_observers.dart';
+import 'flavors.dart';
 
 void app() async {
   // Disable debug print statements in debug mode
@@ -18,6 +21,11 @@ void app() async {
   // Initialize Intl with the default locale and date formatting for Thai
   Intl.defaultLocale = 'th';
   await initializeDateFormatting('th', null);
+
+  if (F.appFlavor != Flavor.prd) {
+    // Set up proxy
+    await appNetworkProxy();
+  }
 
   // Capture any errors that occur during app execution
   Chain.capture(() async {

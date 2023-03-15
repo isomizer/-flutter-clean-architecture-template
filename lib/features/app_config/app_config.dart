@@ -1,19 +1,10 @@
-// ignore_for_file: constant_identifier_names
-
-library app_config;
-
 enum AppConfigEnv {
   dev,
   stg,
   prd,
 }
 
-// Environment value are set from command line Args
-// with `--dart-define`
-// default value are dev value
-// https://dartcode.org/docs/using-dart-define-in-flutter/
-// ``` --dart-define MY_OTHER_VAR=MY_OTHER_VALUE ```
-// stg and prd environment value are set in CI/CD
+
 class AppConfig {
   static final AppConfig _singleton = AppConfig._internal();
   factory AppConfig() => _singleton;

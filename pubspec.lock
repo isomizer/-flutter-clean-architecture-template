@@ -185,14 +185,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.1"
-  cli_completion:
-    dependency: transitive
-    description:
-      name: cli_completion
-      sha256: "595b192451285749369e99b3c2fd9a9aea7d74ed1aba61cddeb9ad8c84a44812"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.3.0"
   cli_util:
     dependency: transitive
     description:
@@ -290,7 +282,7 @@ packages:
     source: hosted
     version: "1.0.5"
   custom_lint:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: custom_lint
       sha256: "29b7e51b5e75fcd5ffce8fc12af87b71cbde7a59d080467b187630231aeb42c0"
@@ -584,14 +576,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.2.0"
-  go_router_builder:
-    dependency: "direct dev"
-    description:
-      name: go_router_builder
-      sha256: "801cd1632b1b6ecfde579a0e082931aea147ec843a4f786121b4849291df508a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.2"
   graphs:
     dependency: transitive
     description:
@@ -688,14 +672,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.6.1"
-  lcov_parser:
-    dependency: transitive
-    description:
-      name: lcov_parser
-      sha256: b2a4225376e47630dbe71217bcf2296e1d79b50e6c20781c0304094b8be05968
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.2"
   lints:
     dependency: transitive
     description:
@@ -720,22 +696,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.3"
-  mason:
-    dependency: transitive
-    description:
-      name: mason
-      sha256: e7b919e7d1f300504017d168d0d4d253cd06ef812149561d984abd3af8ad3ee2
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.0-dev.41"
-  mason_logger:
-    dependency: transitive
-    description:
-      name: mason_logger
-      sha256: ca34d14e998cd7a7738e7320b102aa45fb363aa49a290084b211ababf75bb7ee
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.5"
   matcher:
     dependency: transitive
     description:
@@ -792,6 +752,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  native_flutter_proxy:
+    dependency: "direct main"
+    description:
+      name: native_flutter_proxy
+      sha256: d8109940d3412ecb0e88e841b5c7efee2e4ef6016e0d2dc1ebaa07a87af7a45b
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.15"
   nm:
     dependency: transitive
     description:
@@ -880,14 +848,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  path_to_regexp:
-    dependency: transitive
-    description:
-      name: path_to_regexp
-      sha256: "169d78fbd55e61ea8873bcca545979f559d22238f66facdd7ef30870c7f53327"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.4.0"
   pedantic:
     dependency: transitive
     description:
@@ -1317,14 +1277,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.4"
-  usage:
-    dependency: transitive
-    description:
-      name: usage
-      sha256: ccc861ca619157046d961a1d7fa21a364476c574bb8f3e90219e41b9103adee0
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.1.0"
   uuid:
     dependency: transitive
     description:
@@ -1341,14 +1293,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  very_good_cli:
-    dependency: "direct main"
-    description:
-      name: very_good_cli
-      sha256: dd1db51bb30a63f6554cae48edadbdeb4408a115db604beb6c8fe2ac586725e0
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.12.2"
   very_good_infinite_list:
     dependency: "direct main"
     description:
@@ -1357,14 +1301,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.0"
-  very_good_test_runner:
-    dependency: transitive
-    description:
-      name: very_good_test_runner
-      sha256: "4d41e5d7677d259b9a1599c78645ac2d36bc2bd6ff7773507bcb0bab41417fe2"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.2"
   vm_service:
     dependency: transitive
     description:
